@@ -1,0 +1,30 @@
+.brand{
+    color: aliceblue;
+    /* padding: 30%; */
+}
+
+.item{
+    color: aliceblue;
+}
+
+.navcantainer{
+    white-space: nowrap;
+}
+
+/* .navbar-nav{
+    margin-right: 50%;
+} */
+
+/* .navchild{
+    display: inline-block;
+} */
+
+.foot{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
