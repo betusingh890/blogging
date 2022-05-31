@@ -1,13 +1,23 @@
 
 import Navbar from "./files/navbar.jsx";
-import Footer from "./files/footer.jsx";
+// import Footer from "./files/footer.jsx";
+import Register from "./files/register.jsx";
+import Login from "./files/login.jsx";
+
+import { BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter >
       <Navbar />
-      {/* <Footer /> */}
-    </div>
+
+      <Routes >
+         <Route  path = "/register" element = {<Register />} />
+         <Route  path = "/login" element = {<Login />} />
+      </Routes>
+
+
+    </BrowserRouter>
   );
 }
 

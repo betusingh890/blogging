@@ -1,4 +1,4 @@
-import { combineReducers, createStore, Redux } from "redux";
+import { combineReducers, createStore} from "redux";
 
 function LogInReducer(state = "LoggedOut"){
     switch (state.type) {
