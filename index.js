@@ -1,6 +1,8 @@
 import express from "express";
 
-import connectDB from "./files/connectDB.js";
+import connectDB from "./source/connectDB.js";
+import usersFile from "./source/users.js";
+
 
 const app = express();
 
@@ -12,6 +14,8 @@ connectDB();
 app.get("/", (req,res)=>{
     res.send("We are at home route of backend");
 });
+
+app.use("/register", usersFile);
 
 
 

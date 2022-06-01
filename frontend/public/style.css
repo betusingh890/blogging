@@ -1,3 +1,7 @@
+input {
+    outline: none;
+}
+
 /* 
     
 body{
@@ -52,4 +56,9 @@ body{
 
 .register-form button{
     margin-left: 35%;
+}
+
+
+.password-not-match-popup{
+    
 }
