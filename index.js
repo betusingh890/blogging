@@ -2,7 +2,7 @@ import express from "express";
 
 import connectDB from "./source/connectDB.js";
 import usersFile from "./source/users.js";
-
+import loginFile from "./source/login.js";
 
 const app = express();
 
@@ -16,8 +16,7 @@ app.get("/", (req,res)=>{
 });
 
 app.use("/register", usersFile);
-
-
+app.use("/login", loginFile);
 
 
 var PORT = 8000|| process.env.PORT;
