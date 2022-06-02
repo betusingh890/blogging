@@ -7,25 +7,24 @@ function Login(){
     var [Password, setPassword] = React.useState("");
 
     const sendData = async (data) => {
+        // console.log("we are here")
         var response = await axios.post("/login", data);
         console.log(response);
 
     }
 
-    function submitFunction(event){
+   function submitClicked(event){
+    console.log("we are here")
         event.preventDefault();
-        console.log("we are here");
-        
+        console.log("we are here")
+        var data = {
+            Email : Email,
+            Password : Password
+        }
 
-        // var data = {
-        //     Email : Email,
-        //     Password: Password
-        // }
+        sendData(data); 
 
-        // sendData(data);
-
-
-    }
+   }
 
     return(
         <div className = "login-div cantainer-fluid">
@@ -36,7 +35,7 @@ function Login(){
                 <input type="password" placeholder = "Password" value = {Password} 
                 onChange = {(e) => setPassword(e.target.value)}/>
                 <br />
-                <button onChange = {submitFunction}>Login</button>
+               <button   onChange = {submitClicked}>Submit</button>
             </form>
         </div>
     )
